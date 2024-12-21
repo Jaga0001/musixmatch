@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Login_Page extends StatelessWidget {
-  const Login_Page({super.key});
+class MusicPage extends StatelessWidget {
+  const MusicPage({super.key});
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
@@ -27,26 +27,24 @@ class Login_Page extends StatelessWidget {
             Center(
               child: Column(
                 children: [
-                 Container(
-  
-  child: Row(
-    mainAxisAlignment: MainAxisAlignment.center,
-    children: [
-      Image.network(
-        'https://th.bing.com/th/id/R.3587f8e9df02e2990b93afb9cd6d2323?rik=pdu4Ha7cd%2ftwrg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fspotify-logo-png-spotify-music-app-icon-1024.jpg&ehk=an3w0ln31JOUxMDxW5d5y1NdJ87FxWd1D0Uid0Kc6xw%3d&risl=&pid=ImgRaw&r=0',
-        width: 40, // Set width for the image
-        height: 60, // Set height for the image
-      ),
-      SizedBox(width: 20),
-      Icon(
-        Icons.music_note,
-        color: const Color.fromARGB(255, 77, 220, 82),
-        size: 40,
-      ),
-    ],
-  ),
-),
-
+                  Container(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.network(
+                          'https://th.bing.com/th/id/R.3587f8e9df02e2990b93afb9cd6d2323?rik=pdu4Ha7cd%2ftwrg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fspotify-logo-png-spotify-music-app-icon-1024.jpg&ehk=an3w0ln31JOUxMDxW5d5y1NdJ87FxWd1D0Uid0Kc6xw%3d&risl=&pid=ImgRaw&r=0',
+                          width: 40, // Set width for the image
+                          height: 60, // Set height for the image
+                        ),
+                        SizedBox(width: 20),
+                        Icon(
+                          Icons.music_note,
+                          color: const Color.fromARGB(255, 77, 220, 82),
+                          size: 40,
+                        ),
+                      ],
+                    ),
+                  ),
                   SizedBox(height: 20),
                   Text(
                     'Get the lyrics for your Spotify music',
@@ -70,7 +68,8 @@ class Login_Page extends StatelessWidget {
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green,
-                      padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 50, vertical: 15),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8),
                       ),
@@ -99,5 +98,3 @@ class Login_Page extends StatelessWidget {
     );
   }
 }
-
-

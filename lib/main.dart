@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
-import 'package:musixmatch/Search_Page/search_page.dart';
-=======
-import 'package:musixmatch/Home_Page/Home_Page.dart';
->>>>>>> main
+import 'package:musixmatch/Main_Page/Main_Page.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,11 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-<<<<<<< HEAD
-      home: Search_Page(),
-=======
-      home: HomePage(),
->>>>>>> main
+      home: MainPage(),
     );
   }
 }
